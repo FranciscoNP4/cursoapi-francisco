@@ -30,7 +30,7 @@ public class EstudianteControlador {
         return "Hola estudiante eliminado";
     }
 
-    @PutMapping("matricula")
+    @PutMapping("{matricula}")
     public String actualizarestudiante(@PathVariable String matricula, @RequestBody Estudiante estudiante){
         return "Hola estudiante actualizado: ";
     }
